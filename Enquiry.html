@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer or Sponsor Enquiry | Community Food Banks</title>
+    <meta name="description" content="Enquire about volunteering, sponsoring food parcels or water deliveries, or partnering with Community Food Banks. Get an instant cost estimate or orientation time.">
+    <meta name="keywords" content="volunteer enquiry, sponsor food parcels, corporate partnership South Africa, donate water tanker, food bank enquiry form, Gauteng">
+    <meta name="author" content="ST10528288">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#3f7d3f">
+    <link rel="canonical" href="https://YOUR-USERNAME.github.io/community-food-banks/Enquiry.html">
+    <!-- Security: Content Security Policy restricts where scripts, styles and images may load from -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- Social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Community Food Banks">
+    <meta property="og:title" content="Volunteer or Sponsor Enquiry | Community Food Banks">
+    <meta property="og:description" content="Enquire about volunteering, sponsoring food parcels or water deliveries, or partnering with Community Food Banks. Get an instant cost estimate or orientation time.">
+    <meta property="og:url" content="https://YOUR-USERNAME.github.io/community-food-banks/Enquiry.html">
+    <meta property="og:image" content="https://YOUR-USERNAME.github.io/community-food-banks/images-responsive/community-food-banks-banner-logo-900w.jpg">
+    <meta property="og:locale" content="en_ZA">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-enquiry">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="site-nav__brand" href="Home.html">
+                <img src="images-responsive/community-food-banks-logo-480w.jpg" width="42" height="42" alt="Community Food Banks logo">
+                <span>Community Food Banks</span>
+            </a>
+            <div class="site-nav__links">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Services.html">Services</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Enquiry.html" aria-current="page">Enquiry</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="section">
+            <h1 class="text-center">Make an Enquiry</h1>
+            <p>
+                Would you like to volunteer, sponsor a programme or partner with us? Complete the form below and you will receive an immediate
+                response: an estimated cost if you are sponsoring, or your orientation session if you are volunteering.
+                For general messages, please use our <a href="Contact.html">Contact page</a> instead.
+            </p>
+
+            <form id="enquiry-form" class="form" action="Enquiry.html" method="get" novalidate>
+                <p class="hint">Fields marked <span aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</p>
+                <fieldset>
+                    <legend>About you</legend>
+                <div class="form-field ">
+                    <label for="fullName">Full name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="fullName" name="fullName" required minlength="2" maxlength="60" autocomplete="name" aria-describedby="fullName-error" aria-invalid="false">
+                    
+                    <p class="field-error" id="fullName-error" role="alert"></p>
+                </div>
+                <div class="form-field ">
+                    <label for="email">Email address <span aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" required maxlength="254" autocomplete="email" aria-describedby="email-error" aria-invalid="false">
+                    
+                    <p class="field-error" id="email-error" role="alert"></p>
+                </div>
+                <div class="form-field ">
+                    <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+                    <input type="tel" id="phone" name="phone" required inputmode="tel" autocomplete="tel" placeholder="082 123 4567" aria-describedby="phone-hint phone-error" aria-invalid="false">
+                    <p class="hint" id="phone-hint">South African format, e.g. 082 123 4567 or +27 82 123 4567.</p>
+                    <p class="field-error" id="phone-error" role="alert"></p>
+                </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your enquiry</legend>
+                <div class="form-field ">
+                    <label for="enquiryType">I would like to <span aria-hidden="true">*</span></label>
+                    <select id="enquiryType" name="enquiryType" required aria-describedby="enquiryType-error" aria-invalid="false">
+                        <option value="">Select an option</option>
+                        <option value="volunteer">Volunteer my time</option>
+                        <option value="sponsor">Sponsor a programme</option>
+                    </select>
+                    
+                    <p class="field-error" id="enquiryType-error" role="alert"></p>
+                </div>
+                <div class="form-field ">
+                    <label for="programme">Programme <span aria-hidden="true">*</span></label>
+                    <select id="programme" name="programme" required aria-describedby="programme-error" aria-invalid="false"><option value="">Select a programme</option></select>
+                    
+                    <p class="field-error" id="programme-error" role="alert"></p>
+                </div>
+                <div class="form-field" id="org-wrap" hidden>
+                    <label for="organisation">Organisation or company (optional)</label>
+                    <input type="text" id="organisation" name="organisation" maxlength="80" autocomplete="organization">
+                </div>
+                <div class="form-field ">
+                    <label for="quantity"><span id="quantity-label">Number of units</span> <span aria-hidden="true">*</span></label>
+                    <input type="number" id="quantity" name="quantity" required min="1" max="500" step="1" value="1" aria-describedby="quantity-error" aria-invalid="false">
+                    
+                    <p class="field-error" id="quantity-error" role="alert"></p>
+                </div>
+                <div id="duration-wrap" hidden>
+                <div class="form-field ">
+                    <label for="duration">Sponsorship period <span aria-hidden="true">*</span></label>
+                    <select id="duration" name="duration" required aria-describedby="duration-error" aria-invalid="false">
+                        <option value="">Select a period</option>
+                        <option value="1">1 month</option>
+                        <option value="3">3 months</option>
+                        <option value="6">6 months (5% discount)</option>
+                        <option value="12">12 months (10% discount)</option>
+                    </select>
+                    
+                    <p class="field-error" id="duration-error" role="alert"></p>
+                </div>
+                </div>
+                <div id="availability-wrap" hidden>
+                    <fieldset class="checks">
+                        <legend>When are you available? <span aria-hidden="true">*</span></legend>
+                        <label><input type="checkbox" name="availability" value="Weekdays"> Weekdays</label>
+                        <label><input type="checkbox" name="availability" value="Weekends"> Weekends</label>
+                        <label><input type="checkbox" name="availability" value="Evenings"> Evenings</label>
+                        <p class="field-error" id="availability-error" role="alert"></p>
+                    </fieldset>
+                </div>
+                <div class="form-field ">
+                    <label for="startDate">Preferred start date <span aria-hidden="true">*</span></label>
+                    <input type="date" id="startDate" name="startDate" required aria-describedby="startDate-error" aria-invalid="false">
+                    
+                    <p class="field-error" id="startDate-error" role="alert"></p>
+                </div>
+                <div class="form-field ">
+                    <label for="comments">Additional comments (optional)</label>
+                    <textarea id="comments" name="comments" rows="4" maxlength="500" aria-describedby="comments-count comments-error" aria-invalid="false"></textarea><p class="hint counter" id="comments-count"></p>
+                    
+                    <p class="field-error" id="comments-error" role="alert"></p>
+                </div>
+                </fieldset>
+
+                <div class="hp-field" aria-hidden="true">
+                    <label for="website">Leave this field empty</label>
+                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                </div>
+                <div class="form-field ">
+                    
+                    <label class="checkbox-label"><input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error" aria-invalid="false"> I agree that Community Food Banks may contact me about this enquiry. <span aria-hidden="true">*</span></label>
+                    
+                    <p class="field-error" id="consent-error" role="alert"></p>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">Submit enquiry</button>
+                    <button type="reset" class="btn btn--outline">Clear form</button>
+                </div>
+            </form>
+
+            <div id="enquiry-result" class="result" hidden aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="site-footer__links"><a href="Home.html">Home</a> &middot; <a href="About.html">About</a> &middot; <a href="Services.html">Services</a> &middot; <a href="Gallery.html">Gallery</a> &middot; <a href="Enquiry.html">Enquiry</a> &middot; <a href="Contact.html">Contact</a></p>
+        <p>Email: <a href="mailto:info@communityfoodbanks.org">info@communityfoodbanks.org</a> &middot; Phone: 031 429 2839</p>
+        <p>&copy; ST10528288 DISD1 Community Food Banks</p>
+    </footer>
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/forms.js" defer></script>
+</body>
+</html>

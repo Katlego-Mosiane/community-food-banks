@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /data/
+Disallow: /404.html
+
+Sitemap: https://YOUR-USERNAME.github.io/community-food-banks/sitemap.xml

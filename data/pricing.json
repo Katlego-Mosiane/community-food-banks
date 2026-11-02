@@ -1,0 +1,5 @@
+{
+  "note": "Illustrative figures used for the WEDE5020 assignment.",
+  "discounts": [{"minMonths":6,"rate":0.05},{"minMonths":12,"rate":0.1}],
+  "orientation": {"Weekdays":"Tuesday 10:00","Weekends":"Saturday 08:00","Evenings":"Thursday 18:00"}
+}
